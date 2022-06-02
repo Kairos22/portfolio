@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: normal 1.6rem/1.5 sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin: 2px 15px;
+}
+
+.list li {
+  position: relative;
+  list-style: none;
+  padding: 0.2em 0.8em;
+}
+
+.nav-bar ul li ul {
+  display: none;
+}
+
+.nav-bar ul li:hover {
+  cursor: pointer;
+  color: darkmagenta;
+}
+
+.nav-bar ul li:hover ul {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 200px;
+}
+
+.nav-bar ul li:hover ul li {
+  display: block;
+}
+
+a:link,
+a:active {
+  text-decoration: none;
+  color: darkmagenta;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  color: aqua;
+}
